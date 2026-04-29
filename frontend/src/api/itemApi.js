@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "https://wmt-lab-test-6w10.onrender.com",
+  baseURL: import.meta.env.VITE_API_URL || "https://wmt-lab-test-6w10.onrender.com/api",
 });
 
 export const getItems = () => API.get("/items");
